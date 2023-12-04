@@ -12,6 +12,8 @@ class Overworld extends Phaser.Scene {
 
         this.load.image('tilesetImage', 'tilemap_packed.png')
         this.load.tilemapTiledJSON('tilemapJSON', 'overworld.json')
+
+        this.load.audio('bgm', ['music/worldHub.mp3'])
     }
 
     create() {
@@ -58,8 +60,17 @@ class Overworld extends Phaser.Scene {
         this.physics.add.collider(this.player, bgLayer)
         this.physics.add.collider(this.player, detailLayer)
 
-        //Input
+        // Input
         this.cursors = this.input.keyboard.createCursorKeys()
+
+        // Audio
+        this.bgm = this.sound.add('bgm', {
+            mute: false,
+            loop: true,
+            rate: 1,
+            volume: 1
+        })
+        this.bgm.play()
     }
 
     update(){

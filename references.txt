@@ -22,3 +22,9 @@ Credit:
 
 Tileset for world map:
 	- https://kenney.nl/assets/roguelike-modern-city
+
+World Map song:
+	- https://www.youtube.com/watch?v=gZODY7wDItI
+
+menu song:
+	- https://www.youtube.com/watch?v=lpEL1Nt6rJk&list=PL7pkSK1xbGD5EpVovZN-hmF0Yco-R5j6N&index=2

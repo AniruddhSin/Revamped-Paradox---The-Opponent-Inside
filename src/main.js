@@ -1,4 +1,5 @@
 
+let keySpace
 
 let config = {
     type: Phaser.AUTO,
@@ -15,7 +16,7 @@ let config = {
     },
     zoom: 3,
     // Menu , Overworld
-    scene: [ Overworld ]
+    scene: [ Menu , Overworld ]
 }
 
 const game = new Phaser.Game(config)
