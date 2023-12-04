@@ -12,7 +12,7 @@ class Menu extends Phaser.Scene{
     create(){
         
         this.animsFinished = false
-        let firstHalf = this.add.bitmapText(game.config.width / 2, game.config.height / 5, 'gem', 'REVERTED PARADOX: ', 48).setOrigin(0.5).setAlpha(0)
+        let firstHalf = this.add.bitmapText(game.config.width / 2, game.config.height / 5, 'gem', 'REVAMPED PARADOX: ', 48).setOrigin(0.5).setAlpha(0)
         let secondHalf = this.add.bitmapText(game.config.width / 2, game.config.height / 3, 'gem', 'The Opponent Inside', 48).setOrigin(0.5).setAlpha(0)
 
         let keyBindsText = this.add.bitmapText(game.config.width / 2, 3*game.config.height / 4, 'gem', 'Use arrow keys to move and SPACE to begin!', 20).setOrigin(0.5).setAlpha(0)
