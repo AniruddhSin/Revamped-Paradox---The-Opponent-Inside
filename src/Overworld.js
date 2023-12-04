@@ -16,7 +16,7 @@ class Overworld extends Phaser.Scene {
 
     create() {
         // constants
-        this.VEL = 150
+        this.VEL = 200
 
         // Tilemap
         const map = this.add.tilemap('tilemapJSON')
@@ -47,6 +47,16 @@ class Overworld extends Phaser.Scene {
         this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels)
         this.cameras.main.startFollow(this.player, true, 0.5, 0.5)
         this.physics.world.setBounds(0, 0, map.widthInPixels, map.heightInPixels)
+
+        // Collisions
+        bgLayer.setCollisionByProperty({
+            collides: true
+        })
+        detailLayer.setCollisionByProperty({
+            collides: true
+        })
+        this.physics.add.collider(this.player, bgLayer)
+        this.physics.add.collider(this.player, detailLayer)
 
         //Input
         this.cursors = this.input.keyboard.createCursorKeys()
