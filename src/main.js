@@ -5,17 +5,17 @@ let config = {
     render: {
         pixelArt: true
     },
-    width: 640,
-    height: 480,
+    width: 480,
+    height: 320,
     physics: {
         default: "arcade",
         arcade: {
             debug: true
         }
     },
-    // zoom: 2,
+    zoom: 3,
     // Menu , Overworld
-    scene: []
+    scene: [ Overworld ]
 }
 
 const game = new Phaser.Game(config)

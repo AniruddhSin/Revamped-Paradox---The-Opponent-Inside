@@ -1,0 +1,24 @@
+atk and def stats
+vision stat for accuracy
+hp and mp displayed on screen
+
+attack menu has:
+magic
+item
+science
+
+world hud menu at 5:50
+
+world hud art at 6:26
+
+
+map needs:
+houses
+park
+mall
+
+
+Credit:
+
+Tileset for world map:
+	- https://kenney.nl/assets/roguelike-modern-city
