@@ -71,6 +71,19 @@ class Overworld extends Phaser.Scene {
             volume: 1
         })
         this.bgm.play()
+
+        //timer to start battle
+        this.clock = this.time.delayedCall(30000, () => {
+            this.tweens.add({
+                targets: bgLayer, detailLayer,
+                alpha: {from: 1, to: 0},
+                duration: 3000,
+                onComplete: () =>{
+                    this.bgm.stop()
+                    this.scene.start("battleScene")
+                }
+            })
+        })
     }
 
     update(){

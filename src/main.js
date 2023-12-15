@@ -1,3 +1,15 @@
+// Components Used
+
+/*
+
+Tween Manager
+Arcade Physics
+Animation Manager
+Timer Manager
+Tilemaps
+
+*/
+
 
 let keySpace
 
@@ -15,8 +27,8 @@ let config = {
         }
     },
     zoom: 3,
-    // Menu , Overworld
-    scene: [ Menu , Overworld ]
+    // Menu , Overworld , Battle , Credits
+    scene: [ Menu , Overworld , Battle , Credits ]
 }
 
 const game = new Phaser.Game(config)
